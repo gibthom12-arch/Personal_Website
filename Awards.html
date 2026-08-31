@@ -1,0 +1,184 @@
+<HTML>
+    <head>
+        <title> Academics & Acheivments </title>
+        <link rel="stylesheet" href="Awards.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1> Academic Timeline </h1>
+
+        <div class="titles">
+            <h2> Academics </h2>
+            <h2> Acheivments </h2>
+        </div>
+
+        <div class = "popup" id="popuplboro">
+            <h2> Loughborough University </h2>
+            <h3> Status </h3>
+            <ul>
+                 <li> First year Completed, Average: 65%</li>
+            </ul>
+            <h3> Programming Languages Learned </h3>
+            <ul>
+                <li> Python </li>
+                <li> Java </li>
+                <li> BASH </li>
+                <li> C </li>
+                <li> LMC </li>
+                <li> SQL </li>
+            </ul>
+            <h3> Top Modules </h3>
+            <ul>
+                <li> Low-Level Programming - 92%</li>
+                <li> Artificial Intelligence - 70%</li>
+                <li> Logic - 68%</li>
+                <li> Software Engineering - 68%</li>
+            </ul>
+            <h3> New Skills developed </h3>
+            <ul>
+                <li> Creating and operating CLIs </li>
+                <li> Developing and dictating rule based AIs </li>
+                <li> Understanding how to operate linux CLI </li>
+                <li> More understanding of hardware components </li>
+            </ul>
+            <button type="button" onclick="closePopup('popuplboro')">Close</button>
+        </div>
+
+        <div class="popup" id="popupNewman6th">
+            <h2> Newman 6th </h2>
+            <h3> Status </h3>
+            <ul>
+                 <li> Completed - BBC </li>
+            </ul>
+            <h3> Programming Languages Learned </h3>
+            <ul>
+                <li> Python </li>
+                <li> C# </li>
+                <li> LMC </li>
+                <li> SQL </li>
+            </ul>
+            <h3> All Modules </h3>
+            <ul>
+                <li> Mathematics - B </li>
+                <li> Computer Science - B : Programming NEA - A </li>
+                <li> Psychology - C </li>
+                <li> Extended Project - Pass </li>
+            </ul>
+            <h3> New Skills developed </h3>
+            <ul>
+                <li> Working with a group to produce a single final project </li>
+                <li> Experience using waterfall method documentation </li>
+                <li> Experience programming a large project over the course of a year </li>
+            </ul>
+            <button type="button" onclick="closePopup('popupNewman6th')">Close</button>           
+        </div>
+
+        <div class="popup" id="popupNewmanSchool">
+            <h2> Cardinal Newman School</h2>
+            <h3> Status </h3>
+            <ul>
+                 <li> Completed - Average grade 7 </li>
+            </ul>
+            <h3> Programming Languages Learned </h3>
+            <ul>
+                <li> Python </li>
+                <li> LMC </li>
+                <li> SQL </li>
+            </ul>
+            <h3> Top Modules </h3>
+            <ul>
+                <li> Mathematics - 8 </li>
+                <li> Combined Science - 8:8 </li>
+                <li> English - 8:6 </li>
+                <li> Computer Science - 6 </li>
+            </ul>
+            <button type="button" onclick="closePopup('popupNewmanSchool')">Close</button>   
+        </div>
+
+        <div class="popup" id="popupEDT">
+            <h2> EDT Insight into Uni Silver</h2>
+            <h3> Status </h3>
+            <ul>
+                 <li> Passed </li>
+            </ul>
+            <button type="button" onclick="closePopup('popupEDT')">Close</button>   
+        </div>
+
+        <div class="popup" id="popupDofE">
+            <h2> Duke of Edingburgh Silver Award </h2>
+            <h3> Status </h3>
+            <ul>
+                 <li> Completed </li>
+            </ul>
+            <button type="button" onclick="closePopup('popupDofE')">Close</button>   
+        </div>
+
+        <div class="timeline">
+            <div class="container">
+                <a href = "https://www.lboro.ac.uk"><img src="lboro.jpg" alt="lboro uni"></a>
+                <div class="text-box">
+                    <button type="button" class="btn" onclick="openPopup('popuplboro')"> More Details </button>
+                    <h2>Loughborough University</h2>
+                    <small>2025 - 2029</small>
+                    <p> Overall Grade 1st Year: 2:1 </p>
+                </div>
+            </div>
+
+            <div class="container">
+                <a href="https://www.etrust.org.uk/programmes-industrial-cadets"><img src="EDT.png" alt="EDT"></a>
+                <div class="text-box">
+                    <button type="button" class="btn" onclick="openPopup('popupEDT')">More Details</button>
+                    <h2> EDT Industrial Cadet Silver</h2>
+                    <small> 2024 - 2025 </small>
+                    <p> Passed </p>
+                </div>
+            </div>
+
+            <div class="container ">
+                <a href="https://www.cardinalnewmanschool.net/sixth-form"><img src="neman6th.jpg" alt="newman6th"></a>
+                <div class="text-box">
+                    <button type="button" class="btn" onclick="openPopup('popupNewman6th')">More Details</button>
+                    <h2>Cardinal Newman A Level</h2>
+                    <small>2023 - 2025</small>
+                    <p> Grades: B B C  </p>
+                </div>
+            </div>
+
+            <div class="container ">
+                <a href="https://www.dofe.org/about/"><img src="dukeOEd.jpg" alt="dOFe"></a>
+                <div class="text-box">
+                    <button type="button" class="btn" onclick="openPopup('popupDofE')">More Details</button>
+                    <h2> Duke of Edingburgh Silver</h2>
+                    <small> 2021 - 2022 </small>
+                    <p> Passed </p>
+                </div>
+            </div>
+
+            <div class="container ">
+                <a href="https://www.cardinalnewmanschool.net"> <img src="CardinalNewman.jpg" alt="newman highschool"></a>
+                <div class="text-box">
+                    <button type="button" class="btn" onclick="openPopup('popupNewmanSchool')">More Details</button>
+                    <h2>Cardinal Newman GCSE</h2>
+                    <small>2018 - 2023</small>
+                    <p> Average Grade: 7 </p>
+                </div>
+            </div>
+        </div>
+    
+    <script>
+
+        function openPopup(popupName){
+            let popup = document.getElementById(popupName);
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(popupName){
+            let popup =  document.getElementById(popupName)
+            popup.classList.remove("open-popup");
+        }
+    </script>
+    </body>
+</HTML>

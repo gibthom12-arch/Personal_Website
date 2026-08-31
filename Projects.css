@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    background: #0B1419;
+    color: rgb(0, 110, 253);
+    font-family: Helvetica;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.Description {
+    /*background-color: #152832;*/
+    width: 40%;
+}
+
+.Description h2 {
+    text-align: center;
+}
+
+.ProjectSide{
+    flex-direction: column;
+    width:60%;
+}
+
+button {
+    width: 15%;
+}
+
+.timeline{
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+    margin: 0;
+
+}
+
+.container {
+    position: relative;
+    /*padding: 10px 20px;*/
+    cursor: pointer;
+    top: 0px;
+    width: 45%;
+    margin-left: 10px;
+    margin-top: 20px;
+    background: rgba(42, 221, 141, 0.793);
+    box-sizing: border-box;
+}
+
+.container:hover {
+    transform: scale(1.02)
+}
+
+.text-box {
+    padding: 10px 20px;
+    background: #ffffff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.popup{
+    display: none;
+}
+
+.open-popup{
+    display: block;
+}
+
+
+/*
+.left-container {
+    left: 5%;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 150vh;
+    background-color: rgb(0, 51, 65);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 2;
+}*/

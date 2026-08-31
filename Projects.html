@@ -1,0 +1,248 @@
+<HTML>
+    <head>
+        <title> Projects </title>
+        <link rel="stylesheet" href="Projects.css">
+    </head>
+
+    <body>
+        <div class="ProjectSide">
+        <h2> Game Development </h2>
+        <button type="button" class="btn" onclick="togglePopup('GameDev')"> Show Projects </button>
+        <div class="popup" id="GameDev">
+            <div class="timeline">
+                <div class="container" onclick="togglePopup('DinoDesc')">
+                    <div class="text-box">
+                        <h2>DinoRaider</h2>
+                        <small>Developed: 2025</small>
+                        <p> Status: Planned Ongoing Development </p>
+                    </div>
+                </div>
+
+                <div class="container" onclick="togglePopup('CubeDesc')">
+                    <div class="text-box">
+                        <h2>CubeGame</h2>
+                        <small>Developed: 2025</small>
+                        <p> Status: Planned Ongoing Development </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2> Item Management software </h2>
+        <button type="button" class="btn" onclick="togglePopup('Management')"> Show Projects </button>
+        <div class="popup" id="Management">
+            <div class="timeline">
+                <div class="container" onclick="togglePopup('JavaStore')">
+                    <div class="text-box">
+                        <h2> CLI Store Management Software</h2>
+                        <small>Developed: 2026</small>
+                        <p> Status: No further development </p>
+                    </div>
+                </div>
+
+                <div class="container"  onclick="togglePopup('PythonStore')">
+                    <div class="text-box">
+                        <h2> GUI Store Management Software</h2>
+                        <small>Developed: 2026</small>
+                        <p> Status: No further development </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2> Artificial Intelligence </h2>
+        <button type="button" class="btn" onclick="togglePopup('AI')"> Show Projects </button>
+        <div class="popup" id="AI">
+            <div class="timeline">
+                <div class="container" onclick="togglePopup('WumpusAI')">
+                    <div class="text-box">
+                        <h2> Wumpus World AI </h2>
+                        <small>Developed: 2026</small>
+                        <p> Status: No further development </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="Description">
+            <div class="popup" id="DinoDesc">
+                <h2> DinoRaider </h2>
+                <h3> Type: </h3>
+                <ul>
+                    <li> A Level NEA project</li>
+                    <li> Planned for further development extracurricularly </li>
+                </ul>
+                <h3> Accessible Using: </h3>
+                <ul>
+                    <li> Unity </li>
+                </ul>
+                <h3> Programming Languages:</h3>
+                <ul>
+                    <li> C# </li>
+                </ul>
+                <h3> Key Features:</h3>
+                <ul>
+                    <li> Procedurally generated map </li>
+                    <li> Unique creature AI behaviour </li>
+                    <li> Unique creature abilities </li>
+                </ul>
+                <h3> Key Issues: </h3>
+                <ul>
+                    <li> Uses low quality models some lacking appropriate animations </li>
+                    <li> Procedurally generating map causes significant initial loading time</li>
+                    <li> Creature hit boxes can be faulty </li>
+                    <li> Tamed creatures can change back to a wild state despite being tamed </li>
+                    <li> Lacking a map border allowing creatures/players to wander out of bounds</li>
+                </ul>
+                <h3> Description: </h3>
+                <p> A player is placed into a world surrounded by a variety of creatures. The player is free to roam and interact
+                    with these creatures. By collecting and using 3 taming potions they are able to turn a creature their own side and fight
+                    alongside it. These taming potions can be found spawning randomly across the map. 
+                </p>
+                <h3> Links:</h3>
+            </div>
+
+            <div class="popup" id="CubeDesc">
+                <h2> Cube Game </h2>
+                <h3> Type: </h3>
+                <ul>
+                    <li> Personal Project </li>
+                </ul>
+                <h3> Accessible Using: </h3>
+                <ul>
+                    <li> Unity </li>
+                </ul>
+                <h3> Programming Languages:</h3>
+                <ul>
+                    <li> C# </li>
+                </ul>
+                <h3> Key Features:</h3>
+                <ul>
+                    <li> Unique maps and obstacles each level </li>
+                </ul>
+                <h3> Key Issues: </h3>
+                <ul>
+                    <li> Simple and not very complex </li>
+                    <li> Can be repetetive </li>
+                    <li> Not many levels </li>
+                </ul>
+                <h3> Description: </h3>
+                <p> Simple game where the player needs to dodge obstacles and traverse a track to reach the end of the level </p>
+                <h3> Links: </h3>
+            </div>
+
+            <div class="popup" id="JavaStore">
+                <h2> CLI Store Management Software </h2>
+                <h3> Type: </h3>
+                    <ul>
+                        <li> University Project - Module: Object Oriented Programming</li>
+                    </ul>
+                <h3> Accessible Using: </h3>
+                <ul>
+                    <li> Eclipse </li>
+                </ul>
+                <h3> Programming Languages:</h3>
+                <ul>
+                    <li> Java </li>
+                </ul>
+                <h3> Key Features:</h3>
+                <ul>
+                    <li> Allows for lookup of items using ID or Name </li>
+                    <li> Varies permissions and access level depending on type of user </li>
+                    <li> Uses a simple easy to use numerical CLI </li>
+                    <li> Has effectove exception and error handling </li>
+                    <li> Has effective input validation </li>
+                    <li> Allows for multiple payment types </li>
+                    <li> Allows for new items to be entered and purchased </li>
+                </ul>
+                <h3> Key Issues: </h3>
+                <ul>
+                    <li> Lacks effective user authentication </li>
+                    <li> Lacks ability to see statistics of sales using graphs </li>
+                    <li> Unable to remove items from the stock </li>
+                </ul>
+                <h3> Description: </h3>
+                <p> This software uses a CLI to manage operations for a store. It customers to search, add to basket and purchase
+                    items they desire. It also gives special permissions to admins to view special details about stock and add new items to
+                    the stock. </p>
+                <h3> Links: </h3>
+            </div>
+
+            <div class="popup" id="PythonStore">
+                <h2> GUI Store Management Software </h2>
+                <h3> Type: </h3>
+                    <ul>
+                        <li> University Project - Module- Programming and Databases</li>
+                    </ul>
+                <h3> Accessible Using: </h3>
+                <ul>
+                    <li> Google Colab </li>
+                </ul>
+                <h3> Programming Languages:</h3>
+                <ul>
+                    <li> Python </li>
+                </ul>
+                <h3> Key Features:</h3>
+                <ul>
+                    <li> Search lookup system </li>
+                    <li> Allows renters to provide feedback </li>
+                    <li> Allows new games to be entered and be seen for customers to rent </li>
+                    <li> Provides charts to view the amounts sold of each game </li>
+                    <li> Authenticates user to determine access level to features </li>
+                </ul>
+                <h3> Key Issues: </h3>
+                <ul>
+                    <li> Lacks effective validation of inputs  </li>
+                    <li> Lacks complete error handling</li>
+                    <li> Accounts lack passwords making the accounts insecure </li>
+                    <li> New accounts cannot be created</li>
+                </ul>
+                <h3> Description: </h3>
+                <p> This software was built as an academic project for a hypothetical game store to use. It allows for renting and returning of games,
+                and entering of feedback once a game is returned. It provides the admin with permissions to add new games and view the sales and sales
+                performance of games they have sold. </p>
+                <h3> Links: </h3>
+            </div>
+
+            <div class="popup" id="WumpusAI">
+                <h2> Wumpus World AI </h2>
+                <h3> Type: </h3>
+                    <ul>
+                        <li> University Project - Module- Artificial Intelligence </li>
+                    </ul>
+                <h3> Accessible Using: </h3>
+                <ul>
+                    <li> Google Colab </li>
+                </ul>
+                <h3> Programming Languages:</h3>
+                <ul>
+                    <li> Python </li>
+                </ul>
+                <h3> Key Features:</h3>
+                <ul>
+                    <li> Relies entirely pre-defined rules to traverse a partially observable map </li>
+                    <li> AI is able to use inferences from previous actions to influence later descisions </li>
+                    <li> New Sniper obstacle added into the map for AI to avoid and kill </li>
+                    <li> Works effectively on a number of map layouts </li>
+                    <li> Each descision the AI makes can be clearly explained by parsing through its reasoning </li>
+                </ul>
+                <h3> Key Issues: </h3>
+                <ul>
+                    <li> Untested on maps of differing sizes </li>
+                    <li> Untested on differnet starting points </li>
+                </ul>
+                <h3> Description: </h3>
+                <p> This AI uses a set of pre-defined rules to traverse a map find the gold and return to their initial starting point.
+                    The map is partially observable and the AI only knows the safety of tiles it is currently on or those it has already traversed.
+                </p>
+                <h3> Links: </h3>
+            </div>
+        </div>
+
+        <script>
+            function togglePopup(popupName){
+                let popup = document.getElementById(popupName);
+                popup.classList.toggle("open-popup");
+            }
+        </script>
+    </body>
+</HTML>
