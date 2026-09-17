@@ -1,0 +1,55 @@
+body {
+    background: rgb(197, 212, 208);
+    font-family: Helvetica;
+    font-size: medium;
+    font-weight: bold;
+}
+
+h1 {
+    position: relative;
+    left: 40%;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.container {
+    position: relative;
+    padding: 10px 20px;
+    top: 0px;
+    width: 50%;
+    margin-bottom: 20px;
+    background: rgba(42, 221, 141, 0.793);
+    box-sizing: border-box;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: #ffffff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left-container {
+    left: 20%;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background-color: rgb(0, 51, 65);
+    top: 0;
+    left: 20%;
+    margin-left: -3px;
+    z-index: 2;
+}
