@@ -9,8 +9,8 @@
         <h2> Game Development </h2>
         <button type="button" class="btn" onclick="togglePopup('GameDev')"> Show Projects </button>
         <div class="popup" id="GameDev">
-            <div class="timeline">
-                <div class="container" onclick="togglePopup('DinoDesc')">
+            <div class="ProjectCards">
+                <div class="container" onclick="toggleDescription('DinoDesc')">
                     <div class="text-box">
                         <h2>DinoRaider</h2>
                         <small>Developed: 2025</small>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
 
-                <div class="container" onclick="togglePopup('CubeDesc')">
+                <div class="container" onclick="toggleDescription('CubeDesc')">
                     <div class="text-box">
                         <h2>CubeGame</h2>
                         <small>Developed: 2025</small>
@@ -30,8 +30,8 @@
         <h2> Item Management software </h2>
         <button type="button" class="btn" onclick="togglePopup('Management')"> Show Projects </button>
         <div class="popup" id="Management">
-            <div class="timeline">
-                <div class="container" onclick="togglePopup('JavaStore')">
+            <div class="ProjectCards">
+                <div class="container" onclick="toggleDescription('JavaStore')">
                     <div class="text-box">
                         <h2> CLI Store Management Software</h2>
                         <small>Developed: 2026</small>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <div class="container"  onclick="togglePopup('PythonStore')">
+                <div class="container"  onclick="toggleDescription('PythonStore')">
                     <div class="text-box">
                         <h2> GUI Store Management Software</h2>
                         <small>Developed: 2026</small>
@@ -51,10 +51,30 @@
         <h2> Artificial Intelligence </h2>
         <button type="button" class="btn" onclick="togglePopup('AI')"> Show Projects </button>
         <div class="popup" id="AI">
-            <div class="timeline">
-                <div class="container" onclick="togglePopup('WumpusAI')">
+            <div class="ProjectCards">
+                <div class="container" onclick="toggleDescription('WumpusAI')">
                     <div class="text-box">
                         <h2> Wumpus World AI </h2>
+                        <small>Developed: 2026</small>
+                        <p> Status: No further development </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2> API Integration </h2>
+        <button type="button" class="btn" onclick="togglePopup('API')"> Show Projects </button>
+        <div class="popup" id="API">
+            <div class="ProjectCards">
+                <div class="container" onclick="toggleDescription('CountryTracker')">
+                    <div class="text-box">
+                        <h2> Country Information Tracker </h2>
+                        <small>Developed: 2026</small>
+                        <p> Status: Planned Ongoing Development </p>
+                    </div>
+                </div>
+                <div class="container" onclick="toggleDescription('PokeKanto')">
+                    <div class="text-box">
+                        <h2> Pokemon Kanto Spawn Locations </h2>
                         <small>Developed: 2026</small>
                         <p> Status: No further development </p>
                     </div>
@@ -64,12 +84,17 @@
         </div>
 
         <div class="Description">
+            <div class="popup" id="UserHelp">
+                <h2> Descriptions </h2>
+                <p> To learn more about a shown project please the desired project's card. </p>
+                <p> To close the description press the card again </p>
+            </div>
             <div class="popup" id="DinoDesc">
                 <h2> DinoRaider </h2>
                 <h3> Type: </h3>
                 <ul>
                     <li> A Level NEA project</li>
-                    <li> Planned for further development extracurricularly </li>
+                    <li> Further development done extracurricularly </li>
                 </ul>
                 <h3> Accessible Using: </h3>
                 <ul>
@@ -236,11 +261,100 @@
                 </p>
                 <h3> Links: </h3>
             </div>
+
+            <div class="popup" id="CountryTracker">
+                <h2> Country Information Tracker </h2>
+                <h3> Type: </h3>
+                    <ul>
+                        <li> Personal Project </li>
+                    </ul>
+                <h3> Accessible Using: </h3>
+                <ul>
+                    <li> Code viewable via Github </li>
+                </ul>
+                <h3> Programming Languages:</h3>
+                <ul>
+                    <li> HTML </li>
+                    <li> CSS </li>
+                    <li> Javascript</li>
+                </ul>
+                <h3> Key Features:</h3>
+                <ul>
+                    <li> Collects information from Countries.dev REST api </li>
+                    <li> Has search function to quickly find data about desired country </li>
+                    <li> Uses Geo.Json alongside Leaflet.js to form an interactive map for users to find information </li>
+                    <li> Includes location markers to show where the searched country is </li>
+                    <li> Has loading and error handling to provide consistent feedback to the user </li>
+                </ul>
+                <h3> Key Issues: </h3>
+                <ul>
+                    <li> Use cases for this application are limited and not well thought out </li>
+                    <li> GUI design could be improved </li>
+                </ul>
+                <h3> Description: </h3>
+                <p> Web application for the purpose of searching and exploring country information. 
+                    It includes a searching function which allows users to quickly find countries they need, also supporting an interactive map to promote exploration.
+                </p>
+                <h3> Links: </h3>
+            </div>
+            <div class="popup" id="PokeKanto">
+                <h2> Kanto Region Locater </h2>
+                <h3> Type: </h3>
+                    <ul>
+                        <li> Personal Project </li>
+                    </ul>
+                <h3> Accessible Using: </h3>
+                <ul>
+                    <li> Code viewable via Github </li>
+                </ul>
+                <h3> Programming Languages:</h3>
+                <ul>
+                    <li> HTML </li>
+                    <li> CSS </li>
+                    <li> Javascript</li>
+                </ul>
+                <h3> Key Features:</h3>
+                <ul>
+                    <li> Fetches from PokeAPIs database to find kanto specific locations </li>
+                    <li> Applies markers to specific areas the pokemon spawns </li>
+                    <li> Allows direct searching of pokemon via name </li>
+                </ul>
+                <h3> Key Issues: </h3>
+                <ul>
+                    <li> Use cases for this application are limited </li>
+                    <li> UI design looks unrefined and unappealing </li>
+                    <li> Not all kanto locations implemented making it non-functional for some pokemon </li>
+                    <li> Code lacks error or loading states making it non-user friendly </li>
+                </ul>
+                <h3> Description: </h3>
+                <p> Web application which can be used to search and retrieve location data of pokemon in the kanto region</p>
+                <h3> Links: </h3>
+            </div>
         </div>
 
         <script>
-            function togglePopup(popupName){
+            toggleDescription('UserHelp');
+            function togglePopup(popupName) {
                 let popup = document.getElementById(popupName);
+                popup.classList.toggle("open-popup");
+            }
+
+            function toggleDescription(popupName){
+                let popup = document.getElementById(popupName);
+                let description = document.querySelectorAll(".Description .popup");
+
+                if (popup.classList.contains("open-popup"))
+                {
+                    popup.classList.remove("open-popup");
+                    return;
+                }
+                else 
+                {
+                    description.forEach(function(description)
+                    {
+                        description.classList.remove("open-popup");
+                    });
+                }
                 popup.classList.toggle("open-popup");
             }
         </script>
