@@ -1,14 +1,13 @@
 body {
     display: flex;
     background: #0B1419;
-    color: rgb(0, 110, 253);
+    color: white;
     font-family: Helvetica;
     font-size: medium;
     font-weight: bold;
 }
 
 .Description {
-    /*background-color: #152832;*/
     width: 40%;
 }
 
@@ -29,13 +28,13 @@ button {
     display: flex;
     position: relative;
     max-width: 1200px;
+    color: black;
     margin: 0;
 
 }
 
 .container {
     position: relative;
-    /*padding: 10px 20px;*/
     cursor: pointer;
     top: 0px;
     width: 45%;
